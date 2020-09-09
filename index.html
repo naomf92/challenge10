@@ -36,8 +36,8 @@
     });
     console.log(age);
 
-    const age1 = characters.filter(character => 60 <= character.age && character.age < 70);//省略版
-    console.log(age1);
+    const age2 = characters.filter(character => 60 <= character.age && character.age < 70);//省略版
+    console.log(age2);
 
     // Array.prototype.map()
     // 2. スターウォーズ登場人物で上記にある全員の苗字と下の名前の配列を戻り値としてコンソールに返してみましょう。
@@ -47,6 +47,9 @@
       return `${character.first} ${character.last}`
     });
     console.log(name);
+
+    const name2 = characters.map(character => `${character.first} ${character.last}`);//省略版
+    console.log(name2);
 
     // スプレッド演算子 オブジェクトの追加
     // 3. スプレッド演算子を使って、ルークにジェダイの所属情報（オブジェクト）を追加しましょう。
